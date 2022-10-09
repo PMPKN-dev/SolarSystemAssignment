@@ -1,0 +1,32 @@
+﻿<Window x:Class="SolarSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SolarSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black">
+        <Button
+            x:Name="Starter"
+            Width="40"
+            Height="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Start" Click="Starter_Click"
+            />
+        <Canvas x:Name="Universe" Width="800" Height="434.04">
+            <Ellipse x:Name="SunEllipse"/>
+            <Ellipse x:Name="MercuryEllipse"/>
+            <Ellipse x:Name="VenusEllipse"/>
+            <Ellipse x:Name="EarthEllipse"/>
+            <Ellipse x:Name="MarsEllipse"/>
+            <Ellipse x:Name="JupiterEllipse"/>
+            <Ellipse x:Name="SaturnEllipse"/>
+            <Ellipse x:Name="UranusEllipse"/>
+            <Ellipse x:Name="NeptuneEllipse"/>
+            <Ellipse x:Name="PlutoEllipse"/>
+        </Canvas>
+
+    </Grid>
+</Window>
